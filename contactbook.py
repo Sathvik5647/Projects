@@ -99,28 +99,28 @@ def searchNumber(contacts):
 contacts={}
 print("Welcome to Contactbook")
 z=True
+print("Actions you can perform in the contactbook: ")
+print("1.Add a nummber")
+print("2.Update")
+print("3.Display all Contacts")
+print("4.Delete numbers")
+print("5.Search contacts")
+print("6.Exit the contactbook")
 while (z):
-    x=input("Select an action ( Add / Update / Delete / View / Search ): ")
-    x=x.lower()
-    if (x=="add"):
+    x=int(input("Select an action ( 1 / 2 / 3 / 4 / 5 / 6 ): "))
+    if (x==1):
         addNumber(contacts)
-    elif (x=="update"):
+    elif (x==2):
         updateNumber(contacts)
-    elif (x=="view"):
+    elif (x==3):
         print("Your contacts are : ",contacts)
-    elif (x=="delete"):
+    elif (x==4):
         deleteNumber(contacts)
-    elif (x=="search"):
+    elif (x==5):
         searchNumber(contacts)
+    elif (x==6):
+        print("Exiting Contactbook....")
+        break
     else:
         print("Did not enter a valid operation")
-        break
-    y=input("Do you wish to do more in the contactbook(Y/N): ")
-    y=y.upper()
-    if (y=="Y"):
-        z=True
-    elif (y=="N"):
-        z=False
-    else:
-        print("Invalid input")
         break
