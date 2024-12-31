@@ -99,14 +99,14 @@ def searchNumber(contacts):
 contacts={}
 print("Welcome to Contactbook")
 z=True
-print("Actions you can perform in the contactbook: ")
-print("1.Add a nummber")
-print("2.Update")
-print("3.Display all Contacts")
-print("4.Delete numbers")
-print("5.Search contacts")
-print("6.Exit the contactbook")
 while (z):
+    print("Actions you can perform in the contactbook: ")
+    print("1.Add a nummber")
+    print("2.Update")
+    print("3.Display all Contacts")
+    print("4.Delete numbers")
+    print("5.Search contacts")
+    print("6.Exit the contactbook")
     x=int(input("Select an action ( 1 / 2 / 3 / 4 / 5 / 6 ): "))
     if (x==1):
         addNumber(contacts)
